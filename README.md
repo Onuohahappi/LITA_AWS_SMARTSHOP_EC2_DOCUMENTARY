@@ -12,11 +12,10 @@
 
 ### NACL
 - An internet gateway named LITA_project_VPC was created and attached to the public and private subnets with an inbound rule to allow SSH(22) and HTTP(80) from anywhere-IPv4 and outbound rule of All traffic from Anywhere-IPv4 to enable internet access for the public subnet.
-![NACL](/cl2.jpg)
+![NACL](/Nacl.jpg)
 
 ### ROUTE TABLES
 - Route tables were configured to manage the traffic flow, allowing the SSH and HTTP to ensure the public subnet routes traffic through the internet gateway with the destination being : 0.0.0.0/0.
-![Route Table](/kp.jpg)
 ![Route Table](/rt.jpg)
 ![Public Subnet](/Public_subnet.png)
 ![Private Subnet](/Private_subnet.png)
@@ -41,11 +40,9 @@
 
 ### Keypair for security...
 - I also created a key pair login to securely access the EC2 instances. This key pair allows for SSH access without the need for passwords, enhancing security.
-![Keypair](/kp.jpg)
-![Keypair](/kp2.jpg)
+![Keypair](/Keypair_2.jpg)
 
 ## Apache Installation and Configuration on EC2 Instance...
-
 -I installed an Apache using the key pair I created earlier, and I ensured I have the latest package using the sudo yum update -y, and installed the Apache using the command sudo yum install httpd -y. I connected the EC2 instance via SSH. By installing and configuring Apache on the EC2 instance, I aimed to verify that the instance is running correctly and capable of serving web requests. The successful display of the Apache default welcome page confirms that the web server is operational.
-![Apache](/apache9.jpg)
-![Apache](/apache2.jpg)
+![Apache](/ApacheB.jpg)
+![Apache](/Apache.jpg)
